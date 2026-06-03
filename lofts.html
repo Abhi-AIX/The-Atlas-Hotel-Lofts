@@ -1,0 +1,1642 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- ✏️ EDIT: Browser tab title -->
+  <title>The Atlas Lofts — Extended Stay in Goodletsville, TN</title>
+  <!-- ✏️ EDIT: Description shown in Google search results -->
+  <meta name="description" content="Extended stay lofts in Goodletsville, Tennessee. Fully furnished, design-forward residences for relocating professionals, corporate travelers, and long-term guests — 12 miles from downtown Nashville." />
+
+  <link rel="canonical" href="https://www.theatlaslofts.com/" />
+
+  <!-- OG / Social -->
+  <meta property="og:type"        content="website" />
+  <meta property="og:url"         content="https://www.theatlaslofts.com/" />
+  <meta property="og:title"       content="The Atlas Lofts — Extended Stay, Goodletsville TN" />
+  <meta property="og:description" content="Fully furnished extended-stay lofts near Nashville. Space to think. Room to stay. A home that travels with you." />
+  <meta property="og:image"       content="https://www.theatlaslofts.com/og-image.jpg" />
+  <meta property="og:site_name"   content="The Atlas Lofts" />
+  <meta name="twitter:card"       content="summary_large_image" />
+  <meta name="twitter:image"      content="https://www.theatlaslofts.com/og-image.jpg" />
+
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LodgingBusiness",
+    "name": "The Atlas Lofts",
+    "description": "Extended-stay furnished lofts in Goodletsville, Tennessee, near Nashville.",
+    "url": "https://www.theatlaslofts.com",
+    "telephone": "+1-000-000-0000",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "622 Rivergate Pkwy",
+      "addressLocality": "Goodletsville",
+      "addressRegion": "TN",
+      "postalCode": "37072",
+      "addressCountry": "US"
+    },
+    "priceRange": "$$$",
+    "amenityFeature": [
+      { "@type": "LocationFeatureSpecification", "name": "Full Kitchen",   "value": true },
+      { "@type": "LocationFeatureSpecification", "name": "Free Parking",   "value": true },
+      { "@type": "LocationFeatureSpecification", "name": "Free Wi-Fi",     "value": true },
+      { "@type": "LocationFeatureSpecification", "name": "In-Unit Laundry","value": true }
+    ]
+  }
+  </script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <style>
+    /* ─────────────────────────────────────────
+       CONFIG — update before launch
+    ───────────────────────────────────────── */
+    :root {
+      --ivory:      #F6F0E4;
+      --ivory-2:    #EDE5D4;
+      --stone:      #C7BAA8;
+      --sand:       #D6C9B2;
+      --taupe:      #B4A590;
+      --charcoal:   #282522;
+      --charcoal-2: #3D3831;
+      --bronze:     #9E7B52;
+      --bronze-lt:  #C4A07A;
+      --white:      #FDFAF5;
+      /* Lofts accent — slightly deeper, more residential */
+      --loft-accent: #7A6545;
+      --serif: 'Cormorant Garamond', Georgia, serif;
+      --sans:  'Inter', system-ui, sans-serif;
+      --ease:  cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; overflow-x: hidden; }
+    body {
+      font-family: var(--sans);
+      background: var(--ivory);
+      color: var(--charcoal);
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+    img { display: block; width: 100%; height: 100%; object-fit: cover; }
+    a { color: inherit; text-decoration: none; }
+
+    /* ─── Scroll reveal ─── */
+    .reveal {
+      opacity: 0;
+      transform: translateY(28px);
+      transition: opacity 0.9s var(--ease), transform 0.9s var(--ease);
+    }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+    .reveal-delay-1 { transition-delay: 0.1s; }
+    .reveal-delay-2 { transition-delay: 0.22s; }
+    .reveal-delay-3 { transition-delay: 0.38s; }
+    .reveal-delay-4 { transition-delay: 0.52s; }
+
+    /* ─── Buttons ─── */
+    .btn {
+      display: inline-block;
+      font-family: var(--sans);
+      font-size: 0.75rem;
+      font-weight: 400;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      padding: 16px 36px;
+      border: 1px solid currentColor;
+      transition: background 0.35s var(--ease), color 0.35s var(--ease), border-color 0.35s var(--ease);
+      cursor: pointer;
+    }
+    .btn-bronze { background: var(--bronze); color: var(--white); border-color: var(--bronze); }
+    .btn-bronze:hover { background: var(--loft-accent); border-color: var(--loft-accent); }
+    .btn-ghost  { background: transparent; color: var(--ivory); border-color: rgba(246,240,228,0.5); }
+    .btn-ghost:hover { background: rgba(246,240,228,0.1); border-color: var(--ivory); }
+    .btn-outline { background: transparent; color: var(--charcoal); border-color: var(--charcoal); }
+    .btn-outline:hover { background: var(--charcoal); color: var(--ivory); }
+    .btn-outline-light { background: transparent; color: var(--ivory); border-color: var(--ivory); }
+    .btn-outline-light:hover { background: var(--ivory); color: var(--charcoal); }
+
+    .divider { width: 48px; height: 1px; background: var(--bronze); margin: 24px 0; }
+
+    /* ─── Section labels ─── */
+    .section-label {
+      font-family: var(--sans);
+      font-size: 0.62rem;
+      font-weight: 400;
+      letter-spacing: 0.32em;
+      text-transform: uppercase;
+      color: var(--bronze);
+      margin-bottom: 14px;
+      display: block;
+    }
+    .section-label-lt { color: var(--bronze-lt); }
+    .section-title {
+      font-family: var(--serif);
+      font-size: clamp(2.2rem, 4vw, 3.6rem);
+      font-weight: 300;
+      line-height: 1.1;
+      color: var(--charcoal);
+    }
+    .section-title-lt { color: var(--ivory); }
+
+    /* ═══════════════════════════════════════════
+       NAVIGATION
+    ═══════════════════════════════════════════ */
+    #nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      padding: 28px 56px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      transition: background 0.5s var(--ease), padding 0.4s var(--ease), box-shadow 0.4s var(--ease);
+    }
+    #nav.scrolled {
+      background: rgba(40,37,34,0.97);
+      padding: 18px 56px;
+      box-shadow: 0 2px 40px rgba(0,0,0,0.18);
+    }
+    .nav-logo {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2px;
+    }
+    .nav-logo-main {
+      font-family: var(--serif);
+      font-size: 1.4rem;
+      font-weight: 300;
+      letter-spacing: 0.32em;
+      color: var(--ivory);
+      text-transform: uppercase;
+    }
+    .nav-logo-sub {
+      font-family: var(--sans);
+      font-size: 0.5rem;
+      font-weight: 400;
+      letter-spacing: 0.42em;
+      color: var(--bronze-lt);
+      text-transform: uppercase;
+    }
+    .nav-links {
+      display: flex;
+      gap: 36px;
+      list-style: none;
+    }
+    .nav-links a {
+      font-family: var(--sans);
+      font-size: 0.68rem;
+      font-weight: 400;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: rgba(246,240,228,0.72);
+      transition: color 0.25s;
+    }
+    .nav-links a:hover { color: var(--ivory); }
+    .nav-hotel-link {
+      font-family: var(--sans);
+      font-size: 0.65rem;
+      font-weight: 400;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: rgba(246,240,228,0.5);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      transition: color 0.25s;
+    }
+    .nav-hotel-link:hover { color: var(--ivory); }
+    .nav-hotel-link svg {
+      width: 12px; height: 12px;
+      stroke: currentColor; fill: none;
+      stroke-width: 1.5; stroke-linecap: round;
+    }
+    .nav-inquire {
+      font-family: var(--sans);
+      font-size: 0.68rem;
+      font-weight: 400;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--ivory);
+      background: var(--bronze);
+      border: none;
+      padding: 10px 24px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    .nav-inquire:hover { background: var(--loft-accent); }
+    .nav-hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+    }
+    .nav-hamburger span {
+      display: block; width: 24px; height: 1px;
+      background: var(--ivory); transition: all 0.3s;
+    }
+
+    /* Mobile menu */
+    #mobile-menu {
+      position: fixed; inset: 0;
+      background: rgba(28,24,20,0.98);
+      z-index: 200;
+      display: flex; flex-direction: column;
+      align-items: center; justify-content: center;
+      gap: 32px;
+      opacity: 0; pointer-events: none;
+      transition: opacity 0.4s var(--ease);
+    }
+    #mobile-menu.open { opacity: 1; pointer-events: all; }
+    .mobile-close {
+      position: absolute; top: 28px; right: 32px;
+      font-size: 1.6rem; color: var(--ivory);
+      background: none; border: none; cursor: pointer;
+    }
+    .mobile-menu-links a {
+      display: block;
+      font-family: var(--serif);
+      font-size: 2rem; font-weight: 300;
+      color: var(--ivory); text-align: center;
+      padding: 8px 0; transition: color 0.25s;
+    }
+    .mobile-menu-links a:hover { color: var(--bronze-lt); }
+
+    /* ═══════════════════════════════════════════
+       HERO
+    ═══════════════════════════════════════════ */
+    #hero {
+      position: relative;
+      height: 100vh; min-height: 700px;
+      display: flex; align-items: flex-end;
+      overflow: hidden;
+    }
+    .hero-bg { position: absolute; inset: 0; z-index: 0; }
+    .hero-bg img {
+      object-position: center 40%;
+      transition: transform 8s var(--ease);
+    }
+    #hero.loaded .hero-bg img { transform: scale(1.04); }
+    .hero-overlay {
+      position: absolute; inset: 0;
+      background: linear-gradient(160deg, rgba(28,24,20,0.5) 0%, rgba(28,24,20,0.3) 35%, rgba(28,24,20,0.82) 100%);
+      z-index: 1;
+    }
+    .hero-content {
+      position: relative; z-index: 2;
+      padding: 0 80px 90px;
+      max-width: 860px;
+    }
+    .hero-eyebrow {
+      font-family: var(--sans);
+      font-size: 0.66rem; font-weight: 400;
+      letter-spacing: 0.35em; text-transform: uppercase;
+      color: var(--bronze-lt); margin-bottom: 20px;
+      text-shadow: 0 1px 12px rgba(0,0,0,0.5);
+      opacity: 0; transform: translateY(20px);
+      transition: opacity 1s 0.3s var(--ease), transform 1s 0.3s var(--ease);
+    }
+    #hero.loaded .hero-eyebrow { opacity: 1; transform: translateY(0); }
+    .hero-title {
+      font-family: var(--serif);
+      font-size: clamp(3rem, 6.5vw, 6rem);
+      font-weight: 300; color: var(--white);
+      line-height: 1.05; letter-spacing: -0.01em;
+      margin-bottom: 24px;
+      text-shadow: 0 2px 32px rgba(0,0,0,0.4);
+      opacity: 0; transform: translateY(30px);
+      transition: opacity 1.1s 0.5s var(--ease), transform 1.1s 0.5s var(--ease);
+    }
+    #hero.loaded .hero-title { opacity: 1; transform: translateY(0); }
+    .hero-sub {
+      font-family: var(--sans); font-weight: 300;
+      font-size: 1rem;
+      color: rgba(253,250,245,0.88);
+      letter-spacing: 0.02em; line-height: 1.7;
+      max-width: 460px; margin-bottom: 44px;
+      text-shadow: 0 1px 16px rgba(0,0,0,0.4);
+      opacity: 0; transform: translateY(20px);
+      transition: opacity 1s 0.75s var(--ease), transform 1s 0.75s var(--ease);
+    }
+    #hero.loaded .hero-sub { opacity: 1; transform: translateY(0); }
+    .hero-ctas {
+      display: flex; gap: 16px; flex-wrap: wrap;
+      opacity: 0; transform: translateY(20px);
+      transition: opacity 1s 0.95s var(--ease), transform 1s 0.95s var(--ease);
+    }
+    #hero.loaded .hero-ctas { opacity: 1; transform: translateY(0); }
+    .hero-scroll {
+      position: absolute; bottom: 36px; right: 80px;
+      z-index: 2; display: flex; flex-direction: column;
+      align-items: center; gap: 10px;
+      opacity: 0; transition: opacity 1s 1.4s var(--ease);
+    }
+    #hero.loaded .hero-scroll { opacity: 0.55; }
+    .hero-scroll span {
+      font-family: var(--sans); font-size: 0.58rem;
+      letter-spacing: 0.25em; text-transform: uppercase;
+      color: var(--ivory); writing-mode: vertical-rl;
+    }
+    .hero-scroll-line {
+      width: 1px; height: 56px; background: var(--ivory);
+      animation: pulse 2s ease-in-out infinite;
+    }
+    @keyframes pulse {
+      0%,100% { opacity: 0.55; transform: scaleY(1); }
+      50% { opacity: 0.2; transform: scaleY(0.5); }
+    }
+
+    /* ═══════════════════════════════════════════
+       INTRO BAND
+    ═══════════════════════════════════════════ */
+    #intro {
+      background: var(--charcoal);
+      padding: 72px 80px;
+      display: grid;
+      grid-template-columns: 3fr 2fr;
+      gap: 80px; align-items: center;
+    }
+    .intro-statement {
+      font-family: var(--serif);
+      font-size: clamp(1.5rem, 2.4vw, 2.1rem);
+      font-weight: 300; color: var(--ivory);
+      line-height: 1.5; letter-spacing: 0.01em;
+    }
+    .intro-statement em { color: var(--bronze-lt); font-style: italic; }
+    .intro-tags {
+      display: flex; flex-wrap: wrap; gap: 8px;
+      border-left: 1px solid rgba(199,186,168,0.2);
+      padding-left: 60px;
+    }
+    .intro-tag {
+      font-family: var(--sans); font-size: 0.65rem;
+      font-weight: 300; letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--stone);
+      border: 1px solid rgba(199,186,168,0.25);
+      padding: 7px 16px;
+    }
+
+    /* ═══════════════════════════════════════════
+       WHO IT'S FOR
+    ═══════════════════════════════════════════ */
+    #who {
+      background: var(--ivory-2);
+      padding: 120px 80px;
+    }
+    .who-header {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px; align-items: end;
+      margin-bottom: 64px;
+    }
+    .who-intro-text {
+      font-family: var(--sans); font-weight: 300;
+      font-size: 1rem; line-height: 1.8;
+      color: var(--charcoal-2); margin-top: 20px;
+    }
+    .who-grid {
+      display: grid;
+      grid-template-columns: repeat(4,1fr);
+      gap: 2px;
+    }
+    .who-card {
+      background: var(--white);
+      padding: 44px 32px;
+      display: flex; flex-direction: column;
+      gap: 16px;
+      transition: background 0.3s;
+    }
+    .who-card:hover { background: var(--charcoal); }
+    .who-card:hover .who-card-title { color: var(--ivory); }
+    .who-card:hover .who-card-body  { color: var(--stone); }
+    .who-card:hover .who-card-icon  { color: var(--bronze-lt); }
+    .who-card-icon {
+      color: var(--bronze);
+      transition: color 0.3s;
+    }
+    .who-card-icon svg {
+      width: 28px; height: 28px;
+      stroke: currentColor; fill: none;
+      stroke-width: 1.3; stroke-linecap: round; stroke-linejoin: round;
+    }
+    .who-card-title {
+      font-family: var(--serif);
+      font-size: 1.3rem; font-weight: 400;
+      color: var(--charcoal); line-height: 1.2;
+      transition: color 0.3s;
+    }
+    .who-card-body {
+      font-family: var(--sans); font-weight: 300;
+      font-size: 0.82rem; line-height: 1.75;
+      color: var(--charcoal-2);
+      transition: color 0.3s;
+    }
+
+    /* ═══════════════════════════════════════════
+       LOFT TYPES
+    ═══════════════════════════════════════════ */
+    #units {
+      background: var(--white);
+      padding: 120px 80px;
+    }
+    .units-header {
+      max-width: 580px; margin-bottom: 72px;
+    }
+    .units-header p {
+      font-family: var(--sans); font-weight: 300;
+      font-size: 1rem; line-height: 1.8;
+      color: var(--charcoal-2); margin-top: 20px;
+    }
+    .units-grid {
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      gap: 2px;
+    }
+    .unit-card {
+      position: relative;
+      background: var(--ivory);
+      display: flex; flex-direction: column;
+      overflow: hidden;
+    }
+    .unit-card-img {
+      height: 280px; overflow: hidden; position: relative;
+      flex-shrink: 0;
+    }
+    .unit-card-img img {
+      transition: transform 6s var(--ease);
+    }
+    .unit-card:hover .unit-card-img img { transform: scale(1.05); }
+    .unit-card-badge {
+      position: absolute; top: 20px; left: 20px;
+      background: var(--charcoal);
+      font-family: var(--sans); font-size: 0.58rem;
+      font-weight: 400; letter-spacing: 0.22em;
+      text-transform: uppercase; color: var(--bronze-lt);
+      padding: 6px 14px;
+    }
+    .unit-card-body {
+      padding: 36px 32px 40px;
+      display: flex; flex-direction: column;
+      flex: 1;
+    }
+    .unit-card-name {
+      font-family: var(--serif);
+      font-size: 1.6rem; font-weight: 400;
+      color: var(--charcoal); line-height: 1.15;
+      margin-bottom: 8px;
+    }
+    .unit-card-size {
+      font-family: var(--sans); font-size: 0.7rem;
+      font-weight: 300; letter-spacing: 0.12em;
+      color: var(--taupe); margin-bottom: 20px;
+    }
+    .unit-card-desc {
+      font-family: var(--sans); font-weight: 300;
+      font-size: 0.85rem; line-height: 1.75;
+      color: var(--charcoal-2); margin-bottom: 24px;
+      flex: 1;
+    }
+    .unit-card-features {
+      display: flex; flex-direction: column; gap: 8px;
+      margin-bottom: 28px;
+    }
+    .unit-feature {
+      font-family: var(--sans); font-size: 0.75rem;
+      font-weight: 300; color: var(--charcoal-2);
+      padding-left: 14px;
+      border-left: 1px solid var(--bronze);
+    }
+    .unit-card-price {
+      display: flex; align-items: baseline;
+      gap: 6px; margin-bottom: 24px;
+      padding-top: 20px;
+      border-top: 1px solid var(--sand);
+    }
+    .unit-price-from {
+      font-family: var(--sans); font-size: 0.62rem;
+      font-weight: 300; letter-spacing: 0.15em;
+      text-transform: uppercase; color: var(--taupe);
+    }
+    .unit-price-amount {
+      font-family: var(--serif);
+      font-size: 1.7rem; font-weight: 400;
+      color: var(--bronze); line-height: 1;
+    }
+    .unit-price-unit {
+      font-family: var(--sans); font-size: 0.65rem;
+      font-weight: 300; color: var(--taupe);
+    }
+
+    /* ═══════════════════════════════════════════
+       AMENITIES
+    ═══════════════════════════════════════════ */
+    #amenities {
+      background: var(--charcoal);
+      padding: 120px 80px;
+    }
+    .amenities-layout {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 100px; align-items: center;
+    }
+    .amenities-left {}
+    .amenities-left p {
+      font-family: var(--sans); font-weight: 300;
+      font-size: 1rem; line-height: 1.8;
+      color: var(--stone); margin-top: 20px; margin-bottom: 40px;
+    }
+    .amenities-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2px;
+    }
+    .amenity-tile {
+      background: rgba(255,255,255,0.04);
+      padding: 28px 24px;
+      display: flex; flex-direction: column;
+      gap: 10px;
+      transition: background 0.3s;
+    }
+    .amenity-tile:hover { background: rgba(255,255,255,0.08); }
+    .amenity-tile-icon {
+      color: var(--bronze-lt);
+      width: 20px; height: 20px;
+    }
+    .amenity-tile-icon svg {
+      width: 100%; height: 100%;
+      stroke: currentColor; fill: none;
+      stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round;
+    }
+    .amenity-tile-name {
+      font-family: var(--sans); font-size: 0.72rem;
+      font-weight: 500; letter-spacing: 0.15em;
+      text-transform: uppercase; color: var(--ivory);
+    }
+    .amenity-tile-detail {
+      font-family: var(--sans); font-size: 0.75rem;
+      font-weight: 300; color: var(--stone); line-height: 1.5;
+    }
+    .amenities-right {
+      position: relative; height: 560px; overflow: hidden;
+    }
+    .amenities-right img { transition: transform 8s var(--ease); }
+    .amenities-right:hover img { transform: scale(1.04); }
+
+    /* ═══════════════════════════════════════════
+       HOW IT WORKS
+    ═══════════════════════════════════════════ */
+    #how {
+      background: var(--ivory-2);
+      padding: 120px 80px;
+    }
+    .how-header { text-align: center; max-width: 560px; margin: 0 auto 72px; }
+    .how-header p {
+      font-family: var(--sans); font-weight: 300;
+      font-size: 1rem; line-height: 1.8;
+      color: var(--charcoal-2); margin-top: 20px;
+    }
+    .how-steps {
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      gap: 2px;
+      counter-reset: steps;
+    }
+    .how-step {
+      background: var(--white);
+      padding: 48px 40px;
+      position: relative;
+    }
+    .how-step-num {
+      font-family: var(--serif);
+      font-size: 4rem; font-weight: 300;
+      color: var(--sand); line-height: 1;
+      margin-bottom: 20px;
+    }
+    .how-step-title {
+      font-family: var(--serif);
+      font-size: 1.4rem; font-weight: 400;
+      color: var(--charcoal); margin-bottom: 14px;
+    }
+    .how-step-body {
+      font-family: var(--sans); font-weight: 300;
+      font-size: 0.875rem; line-height: 1.8;
+      color: var(--charcoal-2);
+    }
+    .how-step-connector {
+      position: absolute; top: 52px; right: -1px;
+      width: 1px; height: 40px;
+      background: var(--sand);
+    }
+    .how-step:last-child .how-step-connector { display: none; }
+
+    /* ═══════════════════════════════════════════
+       INQUIRY FORM
+    ═══════════════════════════════════════════ */
+    #inquire {
+      background: var(--charcoal-2);
+      padding: 120px 80px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 100px; align-items: start;
+    }
+    .inquire-left {}
+    .inquire-left .section-title { color: var(--ivory); margin-bottom: 16px; }
+    .inquire-sub {
+      font-family: var(--sans); font-weight: 300;
+      font-size: 0.95rem; line-height: 1.8;
+      color: var(--stone); margin-bottom: 40px;
+    }
+    .inquire-contact-item {
+      display: flex; align-items: center; gap: 12px;
+      margin-bottom: 16px;
+    }
+    .inquire-contact-item svg {
+      width: 16px; height: 16px; flex-shrink: 0;
+      stroke: var(--bronze-lt); fill: none;
+      stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round;
+    }
+    .inquire-contact-item a,
+    .inquire-contact-item span {
+      font-family: var(--sans); font-size: 0.875rem;
+      font-weight: 300; color: var(--stone);
+      transition: color 0.25s;
+    }
+    .inquire-contact-item a:hover { color: var(--ivory); }
+    .inquire-note {
+      font-family: var(--serif); font-style: italic;
+      font-size: 1rem; color: var(--bronze-lt);
+      line-height: 1.6; border-left: 2px solid var(--bronze);
+      padding-left: 18px; margin-top: 36px;
+    }
+    /* Form */
+    .inquiry-form {
+      display: flex; flex-direction: column; gap: 16px;
+    }
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+    .form-group {
+      display: flex; flex-direction: column; gap: 6px;
+    }
+    .form-label {
+      font-family: var(--sans); font-size: 0.6rem;
+      font-weight: 400; letter-spacing: 0.22em;
+      text-transform: uppercase; color: var(--stone);
+    }
+    .form-input, .form-select, .form-textarea {
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(199,186,168,0.2);
+      color: var(--ivory);
+      font-family: var(--sans); font-size: 0.875rem;
+      font-weight: 300; padding: 14px 16px;
+      outline: none;
+      transition: border-color 0.3s, background 0.3s;
+      width: 100%;
+      -webkit-appearance: none;
+    }
+    .form-input::placeholder,
+    .form-textarea::placeholder { color: rgba(199,186,168,0.35); }
+    .form-input:focus,
+    .form-select:focus,
+    .form-textarea:focus {
+      border-color: var(--bronze);
+      background: rgba(255,255,255,0.09);
+    }
+    .form-select { cursor: pointer; }
+    .form-select option { background: var(--charcoal); color: var(--ivory); }
+    .form-textarea { resize: vertical; min-height: 110px; line-height: 1.6; }
+    .form-submit {
+      background: var(--bronze); color: var(--white);
+      border: 1px solid var(--bronze);
+      font-family: var(--sans); font-size: 0.72rem;
+      font-weight: 400; letter-spacing: 0.22em;
+      text-transform: uppercase; padding: 18px 36px;
+      cursor: pointer; transition: background 0.3s;
+      align-self: flex-start;
+    }
+    .form-submit:hover { background: var(--loft-accent); border-color: var(--loft-accent); }
+    .form-privacy {
+      font-family: var(--sans); font-size: 0.65rem;
+      font-weight: 300; color: rgba(199,186,168,0.35);
+    }
+    /* Success state */
+    .form-success {
+      display: none; text-align: center;
+      padding: 60px 40px;
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(199,186,168,0.15);
+    }
+    .form-success-icon {
+      font-family: var(--serif); font-size: 3rem;
+      color: var(--bronze-lt); margin-bottom: 20px;
+    }
+    .form-success h3 {
+      font-family: var(--serif); font-size: 1.8rem;
+      font-weight: 300; color: var(--ivory);
+      margin-bottom: 12px;
+    }
+    .form-success p {
+      font-family: var(--sans); font-weight: 300;
+      font-size: 0.875rem; color: var(--stone); line-height: 1.7;
+    }
+
+    /* ═══════════════════════════════════════════
+       THE ATLAS CONNECTION
+    ═══════════════════════════════════════════ */
+    #hotel-link {
+      position: relative;
+      height: 440px;
+      display: flex; align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+    .hotel-link-bg { position: absolute; inset: 0; }
+    .hotel-link-bg img { filter: brightness(0.45) saturate(0.7); }
+    .hotel-link-overlay {
+      position: absolute; inset: 0;
+      background: rgba(28,24,20,0.5);
+    }
+    .hotel-link-content {
+      position: relative; z-index: 1;
+      text-align: center; padding: 0 40px;
+      max-width: 640px;
+    }
+    .hotel-link-eyebrow {
+      font-family: var(--sans); font-size: 0.62rem;
+      letter-spacing: 0.3em; text-transform: uppercase;
+      color: var(--bronze-lt); margin-bottom: 16px;
+    }
+    .hotel-link-title {
+      font-family: var(--serif);
+      font-size: clamp(1.8rem, 3.5vw, 3rem);
+      font-weight: 300; color: var(--ivory);
+      line-height: 1.15; margin-bottom: 12px;
+    }
+    .hotel-link-sub {
+      font-family: var(--sans); font-weight: 300;
+      font-size: 0.9rem; color: rgba(246,240,228,0.75);
+      line-height: 1.65; margin-bottom: 32px;
+    }
+
+    /* ═══════════════════════════════════════════
+       FAQ
+    ═══════════════════════════════════════════ */
+    #faq {
+      background: var(--ivory);
+      padding: 120px 80px;
+    }
+    .faq-layout {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 100px; align-items: start;
+    }
+    .faq-left { position: sticky; top: 120px; }
+    .faq-left p {
+      font-family: var(--sans); font-weight: 300;
+      font-size: 0.9rem; line-height: 1.8;
+      color: var(--charcoal-2); margin-top: 20px; margin-bottom: 32px;
+    }
+    .faq-list { display: flex; flex-direction: column; gap: 2px; }
+    .faq-item {
+      background: var(--white);
+      border: 1px solid var(--sand);
+    }
+    .faq-question {
+      width: 100%; background: none; border: none;
+      padding: 20px 24px;
+      display: flex; justify-content: space-between;
+      align-items: center; cursor: pointer; text-align: left; gap: 16px;
+    }
+    .faq-question-text {
+      font-family: var(--serif);
+      font-size: 1rem; font-weight: 400;
+      color: var(--charcoal); line-height: 1.35;
+    }
+    .faq-icon {
+      flex-shrink: 0; width: 16px; height: 16px; color: var(--bronze);
+    }
+    .faq-icon svg {
+      width: 100%; height: 100%; stroke: currentColor; fill: none;
+      stroke-width: 1.5; stroke-linecap: round;
+      transition: transform 0.35s var(--ease);
+    }
+    .faq-item.open .faq-icon svg { transform: rotate(45deg); }
+    .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.45s var(--ease); }
+    .faq-item.open .faq-answer { max-height: 300px; }
+    .faq-answer-inner {
+      padding: 0 24px 22px;
+      border-top: 1px solid var(--sand);
+      padding-top: 18px;
+      font-family: var(--sans); font-size: 0.855rem;
+      font-weight: 300; color: var(--charcoal-2); line-height: 1.8;
+    }
+
+    /* ═══════════════════════════════════════════
+       FOOTER
+    ═══════════════════════════════════════════ */
+    footer {
+      background: var(--charcoal);
+      border-top: 1px solid rgba(199,186,168,0.1);
+      padding: 72px 80px 48px;
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      gap: 60px; margin-bottom: 56px;
+    }
+    .footer-brand-name {
+      font-family: var(--serif); font-size: 1.6rem;
+      font-weight: 300; letter-spacing: 0.3em;
+      color: var(--ivory); text-transform: uppercase; margin-bottom: 4px;
+    }
+    .footer-brand-sub {
+      font-family: var(--sans); font-size: 0.52rem;
+      letter-spacing: 0.38em; color: var(--bronze-lt);
+      text-transform: uppercase; margin-bottom: 16px;
+    }
+    .footer-brand-desc {
+      font-family: var(--sans); font-weight: 300;
+      font-size: 0.855rem; line-height: 1.75;
+      color: var(--stone); max-width: 280px;
+    }
+    .footer-col-title {
+      font-family: var(--sans); font-size: 0.58rem;
+      letter-spacing: 0.28em; text-transform: uppercase;
+      color: var(--bronze-lt); margin-bottom: 18px;
+    }
+    .footer-links { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+    .footer-links a {
+      font-family: var(--sans); font-weight: 300;
+      font-size: 0.855rem; color: var(--stone); transition: color 0.25s;
+    }
+    .footer-links a:hover { color: var(--ivory); }
+    .footer-bottom {
+      border-top: 1px solid rgba(199,186,168,0.1);
+      padding-top: 28px;
+      display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px;
+    }
+    .footer-copy {
+      font-family: var(--sans); font-size: 0.7rem;
+      font-weight: 300; color: rgba(199,186,168,0.45);
+    }
+    .footer-bottom-links { display: flex; gap: 24px; }
+    .footer-bottom-links a {
+      font-family: var(--sans); font-size: 0.7rem;
+      font-weight: 300; color: rgba(199,186,168,0.45); transition: color 0.25s;
+    }
+    .footer-bottom-links a:hover { color: var(--stone); }
+
+    /* ═══════════════════════════════════════════
+       RESPONSIVE
+    ═══════════════════════════════════════════ */
+
+    /* ─── Tablet (≤1100px) ─── */
+    @media (max-width: 1100px) {
+      #units { padding: 100px 48px; }
+      .units-grid { grid-template-columns: 1fr; max-width: 600px; }
+      #inquire { grid-template-columns: 1fr; gap: 60px; padding: 100px 48px; }
+      .faq-layout { grid-template-columns: 1fr; gap: 48px; }
+      .faq-left { position: static; }
+      .amenities-layout { grid-template-columns: 1fr; gap: 60px; }
+      .amenities-right { height: 400px; }
+      .amenities-grid { grid-template-columns: repeat(2, 1fr); }
+      #who { padding: 100px 48px; }
+      #how { padding: 100px 48px; }
+      #faq { padding: 100px 48px; }
+      #hotel-link { height: 380px; }
+    }
+
+    /* ─── Mobile (≤768px) ─── */
+    @media (max-width: 768px) {
+      /* Nav */
+      #nav { padding: 20px 24px; }
+      #nav.scrolled { padding: 14px 24px; }
+      .nav-links, .nav-inquire, .nav-hotel-link { display: none; }
+      .nav-hamburger { display: flex; }
+      .nav-logo-main { font-size: 1.15rem; letter-spacing: 0.22em; }
+
+      /* Hero */
+      #hero { min-height: 100svh; }
+      .hero-content { padding: 0 24px 64px; }
+      .hero-title { font-size: clamp(2.6rem, 10vw, 4rem); }
+      .hero-sub { font-size: 0.9rem; max-width: 100%; }
+      .hero-ctas { flex-direction: column; gap: 12px; }
+      .hero-ctas .btn { text-align: center; width: 100%; max-width: 320px; }
+      .hero-scroll { display: none; }
+
+      /* Intro */
+      #intro { grid-template-columns: 1fr; gap: 32px; padding: 56px 24px; }
+      .intro-statement { font-size: clamp(1.2rem, 5vw, 1.6rem); }
+      .intro-tags { border-left: none; padding-left: 0; border-top: 1px solid rgba(199,186,168,0.15); padding-top: 28px; }
+
+      /* Who */
+      #who { padding: 64px 24px; }
+      .who-header { grid-template-columns: 1fr; gap: 20px; }
+      .who-grid { grid-template-columns: 1fr; }
+      .who-card { padding: 32px 24px; }
+
+      /* Units */
+      #units { padding: 64px 24px; }
+      .units-grid { max-width: 100%; }
+      .unit-card-img { height: 240px; }
+      .unit-card-body { padding: 28px 24px 32px; }
+
+      /* Amenities */
+      #amenities { padding: 64px 24px; }
+      .amenities-grid { grid-template-columns: 1fr; }
+      .amenities-right { height: 300px; }
+      .amenity-tile { padding: 22px 18px; }
+
+      /* How it works */
+      #how { padding: 64px 24px; }
+      .how-steps { grid-template-columns: 1fr; }
+      .how-step-connector { display: none; }
+      .how-step { padding: 36px 28px; }
+      .how-step-num { font-size: 3rem; }
+
+      /* Inquire */
+      #inquire { padding: 64px 24px; }
+      .form-row { grid-template-columns: 1fr; }
+      /* Prevent iOS zoom on inputs */
+      .form-input, .form-select, .form-textarea { font-size: 16px; }
+      .form-submit { width: 100%; text-align: center; align-self: stretch; }
+
+      /* Hotel link */
+      #hotel-link { height: auto; min-height: 340px; padding: 60px 24px; }
+      .hotel-link-title { font-size: clamp(1.6rem, 6vw, 2.4rem); }
+
+      /* FAQ */
+      #faq { padding: 64px 24px; }
+      .faq-left { position: static; }
+      .faq-question { padding: 18px 20px; }
+      .faq-answer-inner { padding: 0 20px 20px; padding-top: 16px; }
+
+      /* Footer */
+      .footer-grid { grid-template-columns: 1fr; gap: 36px; }
+      footer { padding: 56px 24px 40px; }
+      .footer-bottom { flex-direction: column; align-items: flex-start; gap: 14px; }
+      .footer-bottom-links { flex-wrap: wrap; gap: 16px; }
+    }
+
+    /* ─── Small mobile (≤400px) ─── */
+    @media (max-width: 400px) {
+      .hero-title { font-size: 2.3rem; }
+      .btn { padding: 14px 20px; font-size: 0.68rem; letter-spacing: 0.16em; }
+      .unit-card-img { height: 200px; }
+    }
+
+    /* ─── Dynamic viewport height for iOS Safari ─── */
+    @supports (height: 100svh) {
+      #hero { height: 100svh; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ─── MOBILE MENU ─── -->
+<div id="mobile-menu">
+  <button class="mobile-close" onclick="toggleMenu()">×</button>
+  <nav class="mobile-menu-links">
+    <a href="#units"   onclick="toggleMenu()">The Lofts</a>
+    <a href="#amenities" onclick="toggleMenu()">Amenities</a>
+    <a href="#how"     onclick="toggleMenu()">How It Works</a>
+    <a href="#inquire" onclick="toggleMenu()">Inquire</a>
+    <a href="#faq"     onclick="toggleMenu()">FAQ</a>
+    <a href="index.html">← The Atlas Hotel</a>
+  </nav>
+</div>
+
+<!-- ─── NAVIGATION ─── -->
+<nav id="nav" role="navigation" aria-label="Main navigation">
+  <a href="lofts.html" class="nav-logo">
+    <span class="nav-logo-main">The Atlas Lofts</span>
+    <span class="nav-logo-sub">Extended Stay · Goodletsville, TN</span>
+  </a>
+
+  <ul class="nav-links">
+    <li><a href="#units">The Lofts</a></li>
+    <li><a href="#amenities">Amenities</a></li>
+    <li><a href="#how">How It Works</a></li>
+    <li><a href="#faq">FAQ</a></li>
+  </ul>
+
+  <a href="index.html" class="nav-hotel-link">
+    <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg>
+    The Atlas Hotel
+  </a>
+
+  <button class="nav-inquire" onclick="document.getElementById('inquire').scrollIntoView({behavior:'smooth'})">
+    Inquire Now
+  </button>
+
+  <div class="nav-hamburger" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- ═══════════════════════════════════════
+     HERO
+═══════════════════════════════════════ -->
+<section id="hero">
+  <div class="hero-bg">
+    <img
+      src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=1920&q=85&auto=format&fit=crop"
+      alt="The Atlas Lofts — extended stay residence"
+      loading="eager"
+    />
+  </div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <p class="hero-eyebrow">The Atlas Lofts · Goodletsville, Tennessee · 622 Rivergate Pkwy</p>
+    <!-- ✏️ EDIT: Main headline -->
+    <h1 class="hero-title">Live Here<br />For a While.</h1>
+    <!-- ✏️ EDIT: Hero subheadline -->
+    <p class="hero-sub">Fully furnished extended-stay residences designed for the way you actually live — not just where you sleep.</p>
+    <div class="hero-ctas">
+      <button class="btn btn-bronze" onclick="document.getElementById('inquire').scrollIntoView({behavior:'smooth'})">Inquire About a Loft</button>
+      <a href="#units" class="btn btn-ghost">See the Lofts</a>
+    </div>
+  </div>
+  <div class="hero-scroll" aria-hidden="true">
+    <span>Explore</span>
+    <div class="hero-scroll-line"></div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     INTRO BAND
+═══════════════════════════════════════ -->
+<section id="intro">
+  <p class="intro-statement reveal">
+    The Atlas Lofts are <em>not a hotel room with a longer checkout</em> — they are fully appointed residences built for guests who need real space, real comfort, and the feeling of <em>actually being somewhere</em>.
+  </p>
+  <div class="intro-tags reveal reveal-delay-2">
+    <span class="intro-tag">30-Day Minimum</span>
+    <span class="intro-tag">Full Kitchens</span>
+    <span class="intro-tag">In-Unit Laundry</span>
+    <span class="intro-tag">All Utilities Included</span>
+    <span class="intro-tag">High-Speed Wi-Fi</span>
+    <span class="intro-tag">Dedicated Workspace</span>
+    <span class="intro-tag">Free Parking</span>
+    <span class="intro-tag">Near Nashville</span>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     WHO IT'S FOR
+═══════════════════════════════════════ -->
+<section id="who">
+  <div class="who-header">
+    <div>
+      <span class="section-label reveal">Designed For</span>
+      <h2 class="section-title reveal reveal-delay-1">Not Everyone Needs<br />Just a Night.</h2>
+    </div>
+    <p class="who-intro-text reveal reveal-delay-2">
+      The Atlas Lofts were built for a specific kind of guest — one who needs more than a hotel can offer, but less than the commitment of a traditional lease. If that sounds like you, you're in the right place.
+    </p>
+  </div>
+  <div class="who-grid">
+    <div class="who-card reveal">
+      <span class="who-card-icon">
+        <svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+      </span>
+      <h3 class="who-card-title">Relocating Professionals</h3>
+      <p class="who-card-body">Between leases, in transition, or new to Nashville. The Lofts give you a real home base while you figure out your next chapter.</p>
+    </div>
+    <div class="who-card reveal reveal-delay-1">
+      <span class="who-card-icon">
+        <svg viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+      </span>
+      <h3 class="who-card-title">Corporate Travelers</h3>
+      <p class="who-card-body">On assignment for weeks or months. Work from a real desk, cook in a real kitchen, and stop living out of a suitcase.</p>
+    </div>
+    <div class="who-card reveal reveal-delay-2">
+      <span class="who-card-icon">
+        <svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+      </span>
+      <h3 class="who-card-title">Families in Transition</h3>
+      <p class="who-card-body">Home is being renovated, sold, or found. The Lofts offer enough space for the whole family while life sorts itself out.</p>
+    </div>
+    <div class="who-card reveal reveal-delay-3">
+      <span class="who-card-icon">
+        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+      </span>
+      <h3 class="who-card-title">Remote Workers & Nomads</h3>
+      <p class="who-card-body">Working from anywhere, spending a month or two in Nashville. Great location, real workspace, none of the noise of a hotel.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     LOFT TYPES
+═══════════════════════════════════════ -->
+<section id="units">
+  <div class="units-header">
+    <span class="section-label reveal">Residences</span>
+    <h2 class="section-title reveal reveal-delay-1">Choose Your Loft</h2>
+    <p class="reveal reveal-delay-2">Three residence types, each fully furnished and ready from day one. All utilities, Wi-Fi, and parking included in the monthly rate.</p>
+  </div>
+  <div class="units-grid">
+
+    <!-- Studio Loft -->
+    <div class="unit-card reveal">
+      <div class="unit-card-img">
+        <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=700&q=80&auto=format&fit=crop" alt="Studio Loft" loading="lazy" />
+        <span class="unit-card-badge">Studio</span>
+      </div>
+      <div class="unit-card-body">
+        <h3 class="unit-card-name">The Studio Loft</h3>
+        <!-- ✏️ EDIT: Replace XXX with real square footage -->
+        <p class="unit-card-size">Approx. XXX sq ft · Sleeps 1–2</p>
+        <p class="unit-card-desc">An intelligently designed open-plan residence for solo travelers or couples. Every inch considered. Nothing wasted.</p>
+        <div class="unit-card-features">
+          <span class="unit-feature">King bed + full bathroom</span>
+          <span class="unit-feature">Kitchenette with full-size appliances</span>
+          <span class="unit-feature">Dedicated work desk</span>
+          <span class="unit-feature">In-unit washer/dryer</span>
+        </div>
+        <div class="unit-card-price">
+          <!-- ✏️ EDIT: Studio Loft monthly price — replace $X,XXX -->
+          <span class="unit-price-from">From</span>
+          <span class="unit-price-amount">$X,XXX</span>
+          <span class="unit-price-unit">/ month · all inclusive</span>
+        </div>
+        <button class="btn btn-outline" onclick="document.getElementById('inquire').scrollIntoView({behavior:'smooth'})">Inquire About This Loft</button>
+      </div>
+    </div>
+
+    <!-- 1-Bedroom Loft -->
+    <div class="unit-card reveal reveal-delay-1">
+      <div class="unit-card-img">
+        <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=700&q=80&auto=format&fit=crop" alt="One Bedroom Loft" loading="lazy" />
+        <span class="unit-card-badge">1 Bedroom</span>
+      </div>
+      <div class="unit-card-body">
+        <h3 class="unit-card-name">The One-Bedroom Loft</h3>
+        <!-- ✏️ EDIT: Replace XXX with real square footage -->
+        <p class="unit-card-size">Approx. XXX sq ft · Sleeps 1–3</p>
+        <p class="unit-card-desc">A proper separation between living and sleeping. For the guest who wants the comfort of home without compromise.</p>
+        <div class="unit-card-features">
+          <span class="unit-feature">Separate bedroom + living area</span>
+          <span class="unit-feature">Full kitchen with dining space</span>
+          <span class="unit-feature">King bed + full bathroom</span>
+          <span class="unit-feature">In-unit washer/dryer</span>
+        </div>
+        <div class="unit-card-price">
+          <!-- ✏️ EDIT: One-Bedroom Loft monthly price — replace $X,XXX -->
+          <span class="unit-price-from">From</span>
+          <span class="unit-price-amount">$X,XXX</span>
+          <span class="unit-price-unit">/ month · all inclusive</span>
+        </div>
+        <button class="btn btn-outline" onclick="document.getElementById('inquire').scrollIntoView({behavior:'smooth'})">Inquire About This Loft</button>
+      </div>
+    </div>
+
+    <!-- 2-Bedroom Loft -->
+    <div class="unit-card reveal reveal-delay-2">
+      <div class="unit-card-img">
+        <img src="https://images.unsplash.com/photo-1484154218962-a197022b5858?w=700&q=80&auto=format&fit=crop" alt="Two Bedroom Loft" loading="lazy" />
+        <span class="unit-card-badge">2 Bedroom</span>
+      </div>
+      <div class="unit-card-body">
+        <h3 class="unit-card-name">The Two-Bedroom Loft</h3>
+        <!-- ✏️ EDIT: Replace XXX with real square footage -->
+        <p class="unit-card-size">Approx. XXX sq ft · Sleeps 2–5</p>
+        <p class="unit-card-desc">Our most spacious residence. For families, colleagues sharing, or guests who simply want room to breathe.</p>
+        <div class="unit-card-features">
+          <span class="unit-feature">Two bedrooms + two bathrooms</span>
+          <span class="unit-feature">Full kitchen + dining + living room</span>
+          <span class="unit-feature">In-unit washer/dryer</span>
+          <span class="unit-feature">Two dedicated workspaces</span>
+        </div>
+        <div class="unit-card-price">
+          <!-- ✏️ EDIT: Two-Bedroom Loft monthly price — replace $X,XXX -->
+          <span class="unit-price-from">From</span>
+          <span class="unit-price-amount">$X,XXX</span>
+          <span class="unit-price-unit">/ month · all inclusive</span>
+        </div>
+        <button class="btn btn-outline" onclick="document.getElementById('inquire').scrollIntoView({behavior:'smooth'})">Inquire About This Loft</button>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     AMENITIES
+═══════════════════════════════════════ -->
+<section id="amenities">
+  <div class="amenities-layout">
+    <div class="amenities-left">
+      <span class="section-label section-label-lt reveal">What's Included</span>
+      <h2 class="section-title section-title-lt reveal reveal-delay-1">Everything.<br />From Day One.</h2>
+      <p class="reveal reveal-delay-2">Every rate includes all utilities, high-speed Wi-Fi, parking, and weekly housekeeping. Arrive with a bag. Live like you've been here for months.</p>
+      <div class="amenities-grid reveal reveal-delay-3">
+        <div class="amenity-tile">
+          <span class="amenity-tile-icon"><svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></span>
+          <span class="amenity-tile-name">Fully Furnished</span>
+          <span class="amenity-tile-detail">Beds, sofas, dining table, all kitchenware included</span>
+        </div>
+        <div class="amenity-tile">
+          <span class="amenity-tile-icon"><svg viewBox="0 0 24 24"><path d="M5 12.55a11 11 0 0 1 14.08 0"/><path d="M1.42 9a16 16 0 0 1 21.16 0"/><path d="M8.53 16.11a6 6 0 0 1 6.95 0"/><line x1="12" y1="20" x2="12.01" y2="20"/></svg></span>
+          <span class="amenity-tile-name">High-Speed Wi-Fi</span>
+          <span class="amenity-tile-detail">Gigabit internet — fast enough for video calls, streaming, and working</span>
+        </div>
+        <div class="amenity-tile">
+          <span class="amenity-tile-icon"><svg viewBox="0 0 24 24"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></span>
+          <span class="amenity-tile-name">All Utilities</span>
+          <span class="amenity-tile-detail">Electric, water, gas — all included, no bills</span>
+        </div>
+        <div class="amenity-tile">
+          <span class="amenity-tile-icon"><svg viewBox="0 0 24 24"><rect x="1" y="3" width="15" height="13" rx="2"/><path d="M16 8h4l3 3v5h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg></span>
+          <span class="amenity-tile-name">Free Parking</span>
+          <span class="amenity-tile-detail">On-site parking for all loft residents, 24/7</span>
+        </div>
+        <div class="amenity-tile">
+          <span class="amenity-tile-icon"><svg viewBox="0 0 24 24"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg></span>
+          <span class="amenity-tile-name">Weekly Housekeeping</span>
+          <span class="amenity-tile-detail">Fresh linens and towels changed weekly</span>
+        </div>
+        <div class="amenity-tile">
+          <span class="amenity-tile-icon"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></span>
+          <span class="amenity-tile-name">Pet-Friendly Options</span>
+          <span class="amenity-tile-detail">Select lofts welcome pets — inquire for details</span>
+        </div>
+        <div class="amenity-tile">
+          <span class="amenity-tile-icon"><svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></span>
+          <span class="amenity-tile-name">Smart TV</span>
+          <span class="amenity-tile-detail">Smart TV in living room, sign in to your own streaming accounts</span>
+        </div>
+        <div class="amenity-tile">
+          <span class="amenity-tile-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></span>
+          <span class="amenity-tile-name">Flexible Terms</span>
+          <span class="amenity-tile-detail">30-day minimum. Month-to-month after that.</span>
+        </div>
+      </div>
+    </div>
+    <div class="amenities-right reveal reveal-delay-2">
+      <img
+        src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=900&q=80&auto=format&fit=crop"
+        alt="Atlas Loft kitchen — fully equipped"
+        loading="lazy"
+      />
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     HOW IT WORKS
+═══════════════════════════════════════ -->
+<section id="how">
+  <div class="how-header">
+    <span class="section-label reveal">The Process</span>
+    <h2 class="section-title reveal reveal-delay-1">Simple From Start<br />to Move-In</h2>
+    <p class="reveal reveal-delay-2">No lengthy applications. No surprise fees. Just a straightforward process to get you settled.</p>
+  </div>
+  <div class="how-steps">
+    <div class="how-step reveal">
+      <div class="how-step-num">01</div>
+      <h3 class="how-step-title">Submit an Inquiry</h3>
+      <p class="how-step-body">Fill out the form below with your preferred loft type, move-in date, and length of stay. We typically respond within 24 hours to confirm availability and answer your questions.</p>
+      <div class="how-step-connector"></div>
+    </div>
+    <div class="how-step reveal reveal-delay-1">
+      <div class="how-step-num">02</div>
+      <h3 class="how-step-title">Review & Confirm</h3>
+      <p class="how-step-body">We'll send you the full loft details, rate breakdown, and a simple agreement. Review at your pace, sign digitally, and confirm your stay with a deposit. No surprises.</p>
+      <div class="how-step-connector"></div>
+    </div>
+    <div class="how-step reveal reveal-delay-2">
+      <div class="how-step-num">03</div>
+      <h3 class="how-step-title">Arrive & Settle In</h3>
+      <p class="how-step-body">Your loft is ready from day one — fully furnished, stocked with essentials, and connected. Collect your keys, walk in, and start living. It really is that simple.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     INQUIRY FORM
+═══════════════════════════════════════ -->
+<section id="inquire">
+  <div class="inquire-left reveal">
+    <span class="section-label section-label-lt">Get In Touch</span>
+    <h2 class="section-title section-title-lt">Ready to Make<br />The Atlas Home?</h2>
+    <p class="inquire-sub">
+      Tell us about your stay and we'll be in touch within 24 hours to confirm availability, answer questions, and walk you through next steps.
+    </p>
+    <div class="inquire-contact-item">
+      <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+      <a href="mailto:lofts@theatlas.com">lofts@theatlas.com</a>
+    </div>
+    <div class="inquire-contact-item">
+      <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      <span>+1 (000) 000-0000</span>
+    </div>
+    <div class="inquire-contact-item">
+      <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+      <span>622 Rivergate Pkwy, Goodletsville, TN 37072</span>
+    </div>
+    <p class="inquire-note">
+      "We respond to every inquiry personally — not with an automated form. Expect to hear from a real person within one business day."
+    </p>
+  </div>
+
+  <div class="reveal reveal-delay-2">
+    <form class="inquiry-form" id="inquiry-form" onsubmit="handleSubmit(event)">
+      <div class="form-row">
+        <div class="form-group">
+          <label class="form-label" for="f-name">First Name *</label>
+          <input class="form-input" type="text" id="f-name" name="first_name" placeholder="Jane" required />
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="f-lname">Last Name *</label>
+          <input class="form-input" type="text" id="f-lname" name="last_name" placeholder="Smith" required />
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label class="form-label" for="f-email">Email Address *</label>
+          <input class="form-input" type="email" id="f-email" name="email" placeholder="jane@email.com" required />
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="f-phone">Phone Number</label>
+          <input class="form-input" type="tel" id="f-phone" name="phone" placeholder="+1 (000) 000-0000" />
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="f-unit">Loft Type Interested In *</label>
+        <select class="form-select" id="f-unit" name="unit_type" required>
+          <option value="" disabled selected>Select a loft type…</option>
+          <option value="studio">Studio Loft</option>
+          <option value="1bed">One-Bedroom Loft</option>
+          <option value="2bed">Two-Bedroom Loft</option>
+          <option value="unsure">Not sure yet — need a recommendation</option>
+        </select>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label class="form-label" for="f-checkin">Desired Move-In Date *</label>
+          <input class="form-input" type="date" id="f-checkin" name="checkin" required />
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="f-duration">Estimated Length of Stay</label>
+          <select class="form-select" id="f-duration" name="duration">
+            <option value="" disabled selected>Select duration…</option>
+            <option value="1mo">1 Month</option>
+            <option value="2mo">2–3 Months</option>
+            <option value="3mo+">3–6 Months</option>
+            <option value="6mo+">6 Months or more</option>
+            <option value="unsure">Not sure yet</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="f-reason">Tell Us About Your Stay</label>
+        <textarea class="form-textarea" id="f-reason" name="message" placeholder="Relocating for work, corporate assignment, family transition — anything that helps us understand your needs…"></textarea>
+      </div>
+      <button type="submit" class="form-submit">Send Inquiry</button>
+      <p class="form-privacy">Your information is kept private and never shared with third parties.</p>
+    </form>
+
+    <div class="form-success" id="form-success">
+      <div class="form-success-icon">✦</div>
+      <h3>Inquiry Received.</h3>
+      <p>Thank you — a member of The Atlas team will be in touch within one business day. We look forward to welcoming you.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     HOTEL LINK
+═══════════════════════════════════════ -->
+<section id="hotel-link">
+  <div class="hotel-link-bg">
+    <img
+      src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=1920&q=80&auto=format&fit=crop"
+      alt="The Atlas Hotel"
+      loading="lazy"
+    />
+  </div>
+  <div class="hotel-link-overlay"></div>
+  <div class="hotel-link-content reveal">
+    <p class="hotel-link-eyebrow">Part of The Atlas Family</p>
+    <h2 class="hotel-link-title">Just Passing Through?<br />The Hotel Has a Room for You.</h2>
+    <p class="hotel-link-sub">For nightly stays and short visits, The Atlas Hotel offers boutique accommodations at the same address — same design, same care, different terms.</p>
+    <a href="index.html" class="btn btn-outline-light">Visit The Atlas Hotel</a>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     FAQ
+═══════════════════════════════════════ -->
+<section id="faq">
+  <div class="faq-layout">
+    <div class="faq-left reveal">
+      <span class="section-label">FAQ</span>
+      <h2 class="section-title">Common<br />Questions</h2>
+      <p>Everything you need to know before you inquire. Don't see your question here? Email us directly at <a href="mailto:lofts@theatlas.com" style="color:var(--bronze);border-bottom:1px solid rgba(158,123,82,0.3);">lofts@theatlas.com</a>.</p>
+      <a href="mailto:lofts@theatlas.com" class="btn btn-outline" style="margin-top: 8px;">Ask Us Directly</a>
+    </div>
+    <div class="faq-list reveal reveal-delay-1">
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          <span class="faq-question-text">What is the minimum stay?</span>
+          <span class="faq-icon"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+        </button>
+        <div class="faq-answer"><div class="faq-answer-inner">The minimum stay for all Atlas Lofts is 30 days. After your first month, stays continue on a month-to-month basis with 30 days' notice to vacate. We do not offer nightly or weekly rates through the Lofts — for shorter stays, please visit The Atlas Hotel.</div></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          <span class="faq-question-text">What's included in the monthly rate?</span>
+          <span class="faq-icon"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+        </button>
+        <div class="faq-answer"><div class="faq-answer-inner">All utilities (electric, water, gas), high-speed Wi-Fi, on-site parking, weekly housekeeping with fresh linens and towels, and all furniture and kitchenware. There are no surprise add-ons. The rate you see is what you pay.</div></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          <span class="faq-question-text">Are the lofts pet-friendly?</span>
+          <span class="faq-icon"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+        </button>
+        <div class="faq-answer"><div class="faq-answer-inner">Select lofts welcome pets. Please mention your pet in your inquiry form and we'll confirm which units are available and any applicable pet terms. Service animals are always welcome at no additional charge.</div></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          <span class="faq-question-text">Do I need to sign a lease?</span>
+          <span class="faq-icon"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+        </button>
+        <div class="faq-answer"><div class="faq-answer-inner">We use a simple short-term residential agreement — not a traditional multi-year lease. The agreement covers your initial stay period and converts to month-to-month after that. Everything is straightforward and signed digitally.</div></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          <span class="faq-question-text">How far is The Atlas Lofts from downtown Nashville?</span>
+          <span class="faq-icon"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+        </button>
+        <div class="faq-answer"><div class="faq-answer-inner">The Atlas Lofts are located at 622 Rivergate Pkwy in Goodletsville — approximately 12 miles north of downtown Nashville, about 20 minutes via I-65. The Grand Ole Opry and Gaylord Opryland Resort are also roughly 20 minutes away. Nashville International Airport is approximately 30 minutes.</div></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          <span class="faq-question-text">Can my company book a loft for a corporate assignment?</span>
+          <span class="faq-icon"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+        </button>
+        <div class="faq-answer"><div class="faq-answer-inner">Yes — we work directly with companies booking accommodation for employees on assignment. We can invoice companies directly and accommodate multiple employees across different units. Email us at <a href="mailto:lofts@theatlas.com" style="color:var(--bronze);">lofts@theatlas.com</a> to discuss corporate rates.</div></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          <span class="faq-question-text">How does check-in work?</span>
+          <span class="faq-icon"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+        </button>
+        <div class="faq-answer"><div class="faq-answer-inner">Once your agreement is signed and deposit confirmed, we'll arrange a move-in time with you directly. A member of our team will be on-site for your arrival to walk you through the loft, hand over keys, and make sure everything is exactly as expected.</div></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     FOOTER
+═══════════════════════════════════════ -->
+<footer>
+  <div class="footer-grid">
+    <div>
+      <p class="footer-brand-name">The Atlas Lofts</p>
+      <p class="footer-brand-sub">Extended Stay · Goodletsville, TN</p>
+      <p class="footer-brand-desc">Fully furnished extended-stay residences in Goodletsville, Tennessee — part of The Atlas hospitality family. 12 miles from downtown Nashville.</p>
+    </div>
+    <div>
+      <p class="footer-col-title">The Lofts</p>
+      <ul class="footer-links">
+        <li><a href="#units">Studio Loft</a></li>
+        <li><a href="#units">One-Bedroom Loft</a></li>
+        <li><a href="#units">Two-Bedroom Loft</a></li>
+        <li><a href="#amenities">Amenities</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="footer-col-title">Contact</p>
+      <ul class="footer-links">
+        <li><a href="mailto:lofts@theatlas.com">lofts@theatlas.com</a></li>
+        <li><a href="tel:+1-000-000-0000">+1 (000) 000-0000</a></li>
+        <li><a href="https://maps.google.com/?q=622+Rivergate+Pkwy+Goodletsville+TN" target="_blank" rel="noopener">622 Rivergate Pkwy<br>Goodletsville, TN 37072</a></li>
+        <li><a href="index.html">← The Atlas Hotel</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p class="footer-copy">&copy; <span id="footer-year">2025</span> The Atlas Lofts. All rights reserved.</p>
+    <div class="footer-bottom-links">
+      <a href="policies.html">Policies &amp; FAQ</a>
+      <a href="policies.html#privacy">Privacy Policy</a>
+      <a href="index.html">The Atlas Hotel</a>
+    </div>
+  </div>
+</footer>
+
+<!-- ─── SCRIPTS ─── -->
+<script>
+  /* Auto-update copyright year */
+  document.getElementById('footer-year').textContent = new Date().getFullYear();
+
+  /* Hero load */
+  window.addEventListener('load', () => {
+    document.getElementById('hero').classList.add('loaded');
+  });
+
+  /* Nav scroll */
+  const nav = document.getElementById('nav');
+  window.addEventListener('scroll', () => {
+    nav.classList.toggle('scrolled', window.scrollY > 60);
+  }, { passive: true });
+
+  /* Scroll reveal */
+  const revealObserver = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('visible');
+        revealObserver.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+  document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
+  /* Mobile menu */
+  function toggleMenu() {
+    const menu = document.getElementById('mobile-menu');
+    menu.classList.toggle('open');
+    document.body.style.overflow = menu.classList.contains('open') ? 'hidden' : '';
+  }
+
+  /* Hero parallax */
+  const heroBgImg = document.querySelector('.hero-bg img');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY < window.innerHeight && heroBgImg) {
+      heroBgImg.style.transform = `scale(1.04) translateY(${window.scrollY * 0.18}px)`;
+    }
+  }, { passive: true });
+
+  /* FAQ accordion */
+  document.querySelectorAll('.faq-question').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const item = btn.closest('.faq-item');
+      const isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item.open').forEach(el => {
+        el.classList.remove('open');
+        el.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+      });
+      if (!isOpen) {
+        item.classList.add('open');
+        btn.setAttribute('aria-expanded', 'true');
+      }
+    });
+  });
+
+  /* Inquiry form */
+  function handleSubmit(e) {
+    e.preventDefault();
+    const form = document.getElementById('inquiry-form');
+    const success = document.getElementById('form-success');
+    /* ══════════════════════════════════════════════════════════════
+       ✏️  CONNECT THIS FORM TO YOUR EMAIL INBOX
+       ══════════════════════════════════════════════════════════════
+       Right now the form shows a success message but doesn't send
+       anything. To receive real inquiries, pick one option:
+
+       OPTION A — Formspree (easiest, free up to 50 submissions/month):
+         1. Go to https://formspree.io and create a free account
+         2. Create a new form — it gives you an ID like "xabcdefg"
+         3. Replace YOUR_FORM_ID below with that ID
+         4. Uncomment the fetch() block
+
+       OPTION B — EmailJS (free, no backend needed):
+         See https://emailjs.com
+
+       OPTION C — Ask a developer to wire it to your backend.
+       ══════════════════════════════════════════════════════════════ */
+
+    // Uncomment this block after setting up Formspree:
+    // fetch('https://formspree.io/f/YOUR_FORM_ID', {
+    //   method: 'POST',
+    //   body: new FormData(form),
+    //   headers: { 'Accept': 'application/json' }
+    // });
+    form.style.display = 'none';
+    success.style.display = 'block';
+  }
+</script>
+</body>
+</html>

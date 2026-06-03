@@ -1,0 +1,981 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Policies & FAQ — The Atlas Hotel & Lofts | Goodletsville, TN</title>
+  <meta name="description" content="Hotel policies, FAQ, cancellation terms, check-in information, and guest guidelines for The Atlas Hotel & Lofts in Goodletsville, Tennessee." />
+
+  <!-- Open Graph -->
+  <meta property="og:type"        content="website" />
+  <meta property="og:url"         content="https://www.theatlasgoodletsville.com/policies" />
+  <meta property="og:title"       content="Policies & FAQ — The Atlas Hotel & Lofts" />
+  <meta property="og:description" content="Everything you need to know before your stay at The Atlas, Goodletsville TN." />
+  <meta property="og:image"       content="https://www.theatlasgoodletsville.com/og-image.jpg" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <style>
+    /* ─── Shared brand tokens ─── */
+    :root {
+      --ivory:      #F6F0E4;
+      --ivory-2:    #EDE5D4;
+      --stone:      #C7BAA8;
+      --sand:       #D6C9B2;
+      --taupe:      #B4A590;
+      --charcoal:   #282522;
+      --charcoal-2: #3D3831;
+      --bronze:     #9E7B52;
+      --bronze-lt:  #C4A07A;
+      --white:      #FDFAF5;
+      --serif:      'Cormorant Garamond', Georgia, serif;
+      --sans:       'Inter', system-ui, sans-serif;
+      --ease:       cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; overflow-x: hidden; }
+    body {
+      font-family: var(--sans);
+      background: var(--ivory);
+      color: var(--charcoal);
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+    a { color: inherit; text-decoration: none; }
+
+    /* ─── Navigation ─── */
+    #nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      background: rgba(40,37,34,0.97);
+      padding: 18px 56px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      box-shadow: 0 2px 40px rgba(0,0,0,0.18);
+    }
+    .nav-logo {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2px;
+    }
+    .nav-logo-main {
+      font-family: var(--serif);
+      font-size: 1.5rem;
+      font-weight: 300;
+      letter-spacing: 0.35em;
+      color: var(--ivory);
+      text-transform: uppercase;
+    }
+    .nav-logo-sub {
+      font-family: var(--sans);
+      font-size: 0.52rem;
+      font-weight: 400;
+      letter-spacing: 0.42em;
+      color: var(--bronze-lt);
+      text-transform: uppercase;
+    }
+    .nav-back {
+      font-family: var(--sans);
+      font-size: 0.68rem;
+      font-weight: 300;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--stone);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      transition: color 0.25s;
+    }
+    .nav-back:hover { color: var(--ivory); }
+    .nav-back svg {
+      width: 14px; height: 14px;
+      stroke: currentColor; fill: none;
+      stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round;
+    }
+    .nav-book {
+      font-family: var(--sans);
+      font-size: 0.7rem;
+      font-weight: 400;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--ivory);
+      background: var(--bronze);
+      border: none;
+      padding: 11px 26px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    .nav-book:hover { background: #876641; }
+
+    /* ─── Page hero ─── */
+    .page-hero {
+      background: var(--charcoal);
+      padding: 160px 80px 80px;
+      position: relative;
+      overflow: hidden;
+    }
+    .page-hero::after {
+      content: '';
+      position: absolute;
+      bottom: 0; left: 80px;
+      width: 48px; height: 1px;
+      background: var(--bronze);
+    }
+    .page-hero-eyebrow {
+      font-family: var(--sans);
+      font-size: 0.65rem;
+      font-weight: 400;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: var(--bronze-lt);
+      margin-bottom: 16px;
+    }
+    .page-hero-title {
+      font-family: var(--serif);
+      font-size: clamp(2.8rem, 5vw, 4.8rem);
+      font-weight: 300;
+      color: var(--ivory);
+      line-height: 1.05;
+      letter-spacing: -0.01em;
+      margin-bottom: 24px;
+    }
+    .page-hero-sub {
+      font-family: var(--sans);
+      font-weight: 300;
+      font-size: 0.95rem;
+      color: var(--stone);
+      line-height: 1.75;
+      max-width: 520px;
+    }
+
+    /* ─── Layout ─── */
+    .page-body {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 80px 80px 120px;
+      display: grid;
+      grid-template-columns: 240px 1fr;
+      gap: 80px;
+      align-items: start;
+    }
+
+    /* ─── Sidebar nav ─── */
+    .sidebar {
+      position: sticky;
+      top: 100px;
+    }
+    .sidebar-title {
+      font-family: var(--sans);
+      font-size: 0.6rem;
+      font-weight: 500;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: var(--bronze);
+      margin-bottom: 20px;
+    }
+    .sidebar-links {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+    .sidebar-links a {
+      display: block;
+      font-family: var(--sans);
+      font-size: 0.8rem;
+      font-weight: 300;
+      color: var(--taupe);
+      padding: 8px 0 8px 14px;
+      border-left: 1px solid var(--sand);
+      transition: color 0.2s, border-color 0.2s;
+      line-height: 1.4;
+    }
+    .sidebar-links a:hover,
+    .sidebar-links a.active {
+      color: var(--charcoal);
+      border-left-color: var(--bronze);
+    }
+    .sidebar-cta {
+      margin-top: 36px;
+      padding-top: 28px;
+      border-top: 1px solid var(--sand);
+    }
+    .sidebar-cta p {
+      font-family: var(--sans);
+      font-size: 0.78rem;
+      font-weight: 300;
+      color: var(--taupe);
+      line-height: 1.65;
+      margin-bottom: 14px;
+    }
+    .sidebar-cta a {
+      font-family: var(--sans);
+      font-size: 0.65rem;
+      font-weight: 400;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--bronze);
+      border-bottom: 1px solid var(--bronze);
+      padding-bottom: 2px;
+      transition: color 0.2s;
+    }
+    .sidebar-cta a:hover { color: var(--charcoal); border-color: var(--charcoal); }
+
+    /* ─── Content ─── */
+    .content { min-width: 0; }
+
+    .policy-section {
+      margin-bottom: 72px;
+      padding-bottom: 72px;
+      border-bottom: 1px solid var(--sand);
+    }
+    .policy-section:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    .section-label {
+      font-family: var(--sans);
+      font-size: 0.62rem;
+      font-weight: 400;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: var(--bronze);
+      margin-bottom: 12px;
+    }
+    .section-title {
+      font-family: var(--serif);
+      font-size: clamp(1.8rem, 3vw, 2.6rem);
+      font-weight: 300;
+      color: var(--charcoal);
+      line-height: 1.15;
+      margin-bottom: 28px;
+    }
+    .policy-body {
+      font-family: var(--sans);
+      font-weight: 300;
+      font-size: 0.9rem;
+      line-height: 1.85;
+      color: var(--charcoal-2);
+      margin-bottom: 16px;
+    }
+    .policy-body strong {
+      font-weight: 500;
+      color: var(--charcoal);
+    }
+
+    /* Info grid (check-in times etc.) */
+    .info-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2px;
+      margin: 28px 0;
+    }
+    .info-card {
+      background: var(--ivory-2);
+      padding: 24px 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    .info-card-label {
+      font-family: var(--sans);
+      font-size: 0.6rem;
+      font-weight: 400;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--taupe);
+    }
+    .info-card-value {
+      font-family: var(--serif);
+      font-size: 1.4rem;
+      font-weight: 400;
+      color: var(--charcoal);
+      line-height: 1;
+    }
+    .info-card-note {
+      font-family: var(--sans);
+      font-size: 0.72rem;
+      font-weight: 300;
+      color: var(--taupe);
+    }
+
+    /* Cancellation tiers */
+    .cancel-tiers {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+      margin: 24px 0;
+    }
+    .cancel-tier {
+      display: grid;
+      grid-template-columns: 180px 1fr;
+      gap: 24px;
+      align-items: start;
+      background: var(--ivory-2);
+      padding: 20px 24px;
+    }
+    .cancel-tier-window {
+      font-family: var(--serif);
+      font-size: 1rem;
+      font-weight: 400;
+      color: var(--charcoal);
+      line-height: 1.3;
+    }
+    .cancel-tier-rule {
+      font-family: var(--sans);
+      font-size: 0.82rem;
+      font-weight: 300;
+      color: var(--charcoal-2);
+      line-height: 1.65;
+    }
+    .cancel-tier.tier-strict { border-left: 3px solid #c0392b; }
+    .cancel-tier.tier-partial { border-left: 3px solid var(--bronze); }
+    .cancel-tier.tier-free    { border-left: 3px solid #5a7a52; }
+
+    /* Policy list */
+    .policy-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin: 20px 0;
+    }
+    .policy-list li {
+      font-family: var(--sans);
+      font-size: 0.875rem;
+      font-weight: 300;
+      color: var(--charcoal-2);
+      line-height: 1.7;
+      padding-left: 20px;
+      position: relative;
+    }
+    .policy-list li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 10px;
+      width: 6px;
+      height: 1px;
+      background: var(--bronze);
+    }
+
+    /* FAQ accordion */
+    .faq-list {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+      margin-top: 8px;
+    }
+    .faq-item {
+      background: var(--white);
+      border: 1px solid var(--sand);
+    }
+    .faq-question {
+      width: 100%;
+      background: none;
+      border: none;
+      padding: 22px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+      text-align: left;
+      gap: 16px;
+    }
+    .faq-question-text {
+      font-family: var(--serif);
+      font-size: 1.05rem;
+      font-weight: 400;
+      color: var(--charcoal);
+      line-height: 1.35;
+    }
+    .faq-icon {
+      flex-shrink: 0;
+      width: 18px; height: 18px;
+      position: relative;
+      color: var(--bronze);
+    }
+    .faq-icon svg {
+      width: 100%; height: 100%;
+      stroke: currentColor; fill: none;
+      stroke-width: 1.5; stroke-linecap: round;
+      transition: transform 0.35s var(--ease);
+    }
+    .faq-item.open .faq-icon svg { transform: rotate(45deg); }
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.45s var(--ease), padding 0.35s var(--ease);
+    }
+    .faq-item.open .faq-answer {
+      max-height: 400px;
+    }
+    .faq-answer-inner {
+      padding: 0 24px 24px;
+      font-family: var(--sans);
+      font-size: 0.875rem;
+      font-weight: 300;
+      color: var(--charcoal-2);
+      line-height: 1.8;
+      border-top: 1px solid var(--sand);
+      padding-top: 20px;
+    }
+    .faq-answer-inner a {
+      color: var(--bronze);
+      border-bottom: 1px solid rgba(158,123,82,0.3);
+      transition: border-color 0.2s;
+    }
+    .faq-answer-inner a:hover { border-color: var(--bronze); }
+
+    /* Notice box */
+    .notice {
+      background: var(--ivory-2);
+      border-left: 3px solid var(--bronze);
+      padding: 20px 24px;
+      margin: 24px 0;
+    }
+    .notice p {
+      font-family: var(--sans);
+      font-size: 0.82rem;
+      font-weight: 300;
+      color: var(--charcoal-2);
+      line-height: 1.75;
+    }
+    .notice strong { font-weight: 500; color: var(--charcoal); }
+
+    /* ─── Footer ─── */
+    .page-footer {
+      background: var(--charcoal);
+      padding: 48px 80px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 24px;
+      border-top: 1px solid rgba(199,186,168,0.1);
+    }
+    .page-footer-brand {
+      font-family: var(--serif);
+      font-size: 1.2rem;
+      font-weight: 300;
+      letter-spacing: 0.3em;
+      color: var(--ivory);
+      text-transform: uppercase;
+    }
+    .page-footer-copy {
+      font-family: var(--sans);
+      font-size: 0.7rem;
+      font-weight: 300;
+      color: rgba(199,186,168,0.45);
+    }
+    .page-footer-links {
+      display: flex;
+      gap: 24px;
+    }
+    .page-footer-links a {
+      font-family: var(--sans);
+      font-size: 0.7rem;
+      font-weight: 300;
+      color: rgba(199,186,168,0.45);
+      transition: color 0.25s;
+    }
+    .page-footer-links a:hover { color: var(--stone); }
+
+    /* ─── Responsive ─── */
+
+    /* Tablet — 1024px */
+    @media (max-width: 1024px) {
+      #nav { padding: 16px 32px; }
+      .page-hero { padding: 140px 48px 64px; }
+      .page-body {
+        max-width: 100%;
+        padding: 64px 48px 100px;
+        gap: 56px;
+      }
+      .page-footer { padding: 40px 48px; }
+    }
+
+    /* Mobile — 768px */
+    @media (max-width: 768px) {
+      /* Nav */
+      #nav { padding: 14px 20px; }
+      .nav-logo-main { font-size: 1.2rem; }
+      .nav-book { display: none; }
+
+      /* Page hero */
+      .page-hero {
+        padding: 120px 24px 56px;
+      }
+      .page-hero::after { left: 24px; }
+      .page-hero-title { font-size: clamp(2.2rem, 8vw, 3.2rem); }
+
+      /* Layout — collapse sidebar, single column */
+      .page-body {
+        grid-template-columns: 1fr;
+        padding: 48px 24px 80px;
+        gap: 0;
+      }
+      .sidebar {
+        display: none; /* sidebar hidden on mobile — sections are linear */
+      }
+
+      /* Info grid — 2 columns on mobile */
+      .info-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      /* Cancellation tiers — stack window + rule */
+      .cancel-tier {
+        grid-template-columns: 1fr;
+        gap: 8px;
+      }
+
+      /* FAQ */
+      .faq-question { padding: 18px 16px; }
+      .faq-answer-inner { padding: 0 16px 20px; padding-top: 16px; }
+
+      /* Notice */
+      .notice { padding: 16px 18px; }
+
+      /* Footer */
+      .page-footer {
+        padding: 40px 24px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+      }
+      .page-footer-links {
+        flex-direction: column;
+        gap: 12px;
+      }
+    }
+
+    /* Small mobile — 400px */
+    @media (max-width: 400px) {
+      .page-hero { padding: 110px 18px 48px; }
+      .page-body { padding: 40px 18px 64px; }
+      .page-hero-title { font-size: 2rem; }
+
+      /* Info grid — single column on very small screens */
+      .info-grid { grid-template-columns: 1fr; }
+      .info-card { padding: 18px 16px; }
+
+      .page-footer { padding: 36px 18px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ─── NAV ─── -->
+<nav id="nav" role="navigation" aria-label="Page navigation">
+  <a href="index.html" class="nav-logo" aria-label="The Atlas — return to homepage">
+    <span class="nav-logo-main">The Atlas</span>
+    <span class="nav-logo-sub">Hotel &amp; Lofts</span>
+  </a>
+  <a href="index.html" class="nav-back">
+    <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg>
+    Back to Home
+  </a>
+  <!-- ✏️ EDIT: Replace the Yanolja URL below with your real booking page URL -->
+  <button class="nav-book" onclick="window.open('https://www.yanolja.com/en/','_blank','noopener')" aria-label="Book your stay">
+    Book a Room
+  </button>
+</nav>
+
+<!-- ─── PAGE HERO ─── -->
+<header class="page-hero">
+  <p class="page-hero-eyebrow">The Atlas Hotel &amp; Lofts · Goodletsville, TN</p>
+  <h1 class="page-hero-title">Policies &amp;<br />Guest Information</h1>
+  <p class="page-hero-sub">Everything you need to know before, during, and after your stay. If you have a question not covered here, we're always happy to help.</p>
+</header>
+
+<!-- ─── MAIN CONTENT ─── -->
+<div class="page-body">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar" aria-label="Page sections">
+    <p class="sidebar-title">On This Page</p>
+    <ul class="sidebar-links">
+      <li><a href="#checkin">Check-In &amp; Check-Out</a></li>
+      <li><a href="#cancellation">Cancellation &amp; Refunds</a></li>
+      <li><a href="#parking">Parking</a></li>
+      <li><a href="#pets">Pet Policy</a></li>
+      <li><a href="#lofts-policy">Lofts Policy</a></li>
+      <li><a href="#accessibility">Accessibility</a></li>
+      <li><a href="#privacy">Privacy Policy</a></li>
+      <li><a href="#faq">Frequently Asked Questions</a></li>
+    </ul>
+    <div class="sidebar-cta">
+      <p>Questions about your booking? We're here to help.</p>
+      <a href="mailto:hello@theatlas.com">hello@theatlas.com</a>
+    </div>
+  </aside>
+
+  <!-- CONTENT -->
+  <main class="content">
+
+    <!-- CHECK-IN / CHECK-OUT -->
+    <section class="policy-section" id="checkin">
+      <p class="section-label">Arrival &amp; Departure</p>
+      <h2 class="section-title">Check-In &amp; Check-Out</h2>
+
+      <div class="info-grid">
+        <div class="info-card">
+          <span class="info-card-label">Check-In</span>
+          <span class="info-card-value">3:00 PM</span>
+          <span class="info-card-note">Earliest available</span>
+        </div>
+        <div class="info-card">
+          <span class="info-card-label">Check-Out</span>
+          <span class="info-card-value">11:00 AM</span>
+          <span class="info-card-note">Latest standard</span>
+        </div>
+        <div class="info-card">
+          <span class="info-card-label">Late Check-Out</span>
+          <span class="info-card-value">Upon Request</span>
+          <span class="info-card-note">Subject to availability</span>
+        </div>
+      </div>
+
+      <p class="policy-body">
+        Early check-in before 3:00 PM and late check-out after 11:00 AM are available upon request and subject to room availability. Please contact us in advance to arrange. Additional fees may apply.
+      </p>
+      <!-- ✏️ EDIT: Replace [TODO: add hours] with your real front desk hours e.g. "7:00 AM – 10:00 PM daily" -->
+      <p class="policy-body">
+        <strong>Front desk hours:</strong> [TODO: add hours]. Outside of front desk hours, self check-in instructions will be provided prior to arrival.
+      </p>
+
+      <div class="notice">
+        <p><strong>Valid photo ID required at check-in.</strong> All guests must present a government-issued photo ID matching the reservation name. A credit card will be held on file for incidentals.</p>
+      </div>
+    </section>
+
+    <!-- CANCELLATION -->
+    <section class="policy-section" id="cancellation">
+      <p class="section-label">Reservations</p>
+      <h2 class="section-title">Cancellation &amp; Refund Policy</h2>
+
+      <p class="policy-body">We understand plans change. Our cancellation policy is designed to be fair to both our guests and our small independent team.</p>
+
+      <div class="cancel-tiers">
+        <div class="cancel-tier tier-free">
+          <span class="cancel-tier-window">More than 48 hours before arrival</span>
+          <span class="cancel-tier-rule">Full refund issued. No cancellation fee. Cancel directly through your booking platform or contact us at hello@theatlas.com.</span>
+        </div>
+        <div class="cancel-tier tier-partial">
+          <span class="cancel-tier-window">24–48 hours before arrival</span>
+          <span class="cancel-tier-rule">50% refund of the total booking cost. The remaining 50% will be charged as a cancellation fee.</span>
+        </div>
+        <div class="cancel-tier tier-strict">
+          <span class="cancel-tier-window">Less than 24 hours before arrival</span>
+          <span class="cancel-tier-rule">No refund. The full booking amount will be charged. No-shows are treated as a same-day cancellation.</span>
+        </div>
+      </div>
+
+      <div class="notice">
+        <p><strong>Non-refundable rates:</strong> Some promotional rates and packages are non-refundable at the time of booking. These will be clearly marked before purchase. Please review your booking confirmation for the specific terms that apply to your reservation.</p>
+      </div>
+
+      <p class="policy-body">
+        To cancel or modify a reservation, please use your original booking platform or email <a href="mailto:hello@theatlas.com" style="color:var(--bronze);border-bottom:1px solid rgba(158,123,82,0.3);">hello@theatlas.com</a> with your reservation number.
+      </p>
+    </section>
+
+    <!-- PARKING -->
+    <section class="policy-section" id="parking">
+      <p class="section-label">Getting Here</p>
+      <h2 class="section-title">Parking</h2>
+
+      <p class="policy-body">
+        <strong>Complimentary on-site parking is available for all hotel guests</strong> for the duration of their stay. No reservation required — parking is available on a first-come, first-served basis.
+      </p>
+
+      <ul class="policy-list">
+        <li>Surface lot parking directly on the property</li>
+        <li>Available 24 hours, 7 days a week</li>
+        <li>No additional charge for guests</li>
+        <li>Accessible parking spaces available</li>
+        <li>Oversized vehicle parking available — please contact us in advance</li>
+        <li>RV / commercial vehicle parking — contact us to arrange</li>
+      </ul>
+
+      <p class="policy-body">
+        The Atlas is located at <strong>622 Rivergate Pkwy, Goodletsville, TN 37072</strong>, directly accessible from I-65 North, Exit 97. Approximately 20 minutes from downtown Nashville.
+      </p>
+    </section>
+
+    <!-- PETS -->
+    <section class="policy-section" id="pets">
+      <p class="section-label">Four-Legged Guests</p>
+      <h2 class="section-title">Pet Policy</h2>
+
+      <p class="policy-body">We understand your pet is part of the family. The Atlas is working to create a welcoming environment for guests traveling with animals. Please contact us <strong>prior to booking</strong> to discuss your specific needs and confirm availability of pet-friendly accommodations.</p>
+
+      <ul class="policy-list">
+        <li>Pet-friendly rooms are available in select room types — please inquire when booking</li>
+        <!-- ✏️ EDIT: Fill in max pets, weight limit, and nightly pet fee -->
+        <li>Maximum of [TODO: X] pets per room</li>
+        <li>Weight limit: [TODO: X lbs] per pet</li>
+        <li>A non-refundable pet fee of <strong>$[TODO: XX] per night</strong> applies</li>
+        <li>Pets must not be left unattended in rooms without prior arrangement</li>
+        <li>Pets are welcome in outdoor areas of the property and must be kept on a leash at all times</li>
+        <li>Guests are responsible for any damage caused by their pet</li>
+      </ul>
+
+      <div class="notice">
+        <p><strong>Service animals are always welcome</strong> at no additional charge, in accordance with the Americans with Disabilities Act. No documentation is required.</p>
+      </div>
+    </section>
+
+    <!-- LOFTS POLICY -->
+    <section class="policy-section" id="lofts-policy">
+      <p class="section-label">Extended Stay</p>
+      <h2 class="section-title">The Atlas Lofts — Guest Guidelines</h2>
+
+      <p class="policy-body">
+        The Atlas Lofts are a separate extended-stay experience with distinct terms from the hotel. Full loft policies, lease terms, and booking information are available on the dedicated Atlas Lofts website.
+      </p>
+
+      <ul class="policy-list">
+        <!-- ✏️ EDIT: Lofts minimum stay e.g. "30 days" or "monthly" -->
+        <li>Minimum stay: [TODO: X nights / X weeks / monthly]</li>
+        <li>All loft inquiries are handled separately from hotel reservations</li>
+        <li>Monthly rates are available for qualifying guests</li>
+        <li>Corporate and relocation rates available — contact us for details</li>
+        <li>Loft-specific pet policy may differ — please inquire directly</li>
+      </ul>
+
+      <p class="policy-body">
+        For full Lofts policies, rates, and availability, please visit the <a href="#" onclick="window.open('https://theatlaslofts.com','_blank','noopener'); return false;" style="color:var(--bronze);border-bottom:1px solid rgba(158,123,82,0.3);">Atlas Lofts website</a> or email <a href="mailto:hello@theatlas.com" style="color:var(--bronze);border-bottom:1px solid rgba(158,123,82,0.3);">hello@theatlas.com</a>.
+      </p>
+    </section>
+
+    <!-- ACCESSIBILITY -->
+    <section class="policy-section" id="accessibility">
+      <p class="section-label">Inclusive Hospitality</p>
+      <h2 class="section-title">Accessibility</h2>
+
+      <p class="policy-body">The Atlas is committed to providing a welcoming, accessible experience for all guests. We strive to meet or exceed ADA requirements and are continuously working to improve accessibility across our property.</p>
+
+      <ul class="policy-list">
+        <li>Accessible parking spaces available on-site</li>
+        <li>Ground-floor accessible room options available — request at booking</li>
+        <li>Roll-in shower and grab bar equipped rooms available upon request</li>
+        <li>Service animals welcome at no charge, no documentation required</li>
+        <li>Staff trained to assist guests with accessibility needs</li>
+        <!-- ✏️ EDIT: Confirm actual accessibility features on property and replace these lines -->
+        <li>[TODO: elevator availability — confirm with property]</li>
+        <li>[TODO: visual / hearing accommodation options — confirm with property]</li>
+      </ul>
+
+      <p class="policy-body">If you have specific accessibility requirements or questions prior to your stay, please contact us directly at <a href="mailto:hello@theatlas.com" style="color:var(--bronze);border-bottom:1px solid rgba(158,123,82,0.3);">hello@theatlas.com</a> so we can ensure your room and experience are prepared appropriately.</p>
+    </section>
+
+    <!-- PRIVACY POLICY -->
+    <section class="policy-section" id="privacy">
+      <p class="section-label">Your Data</p>
+      <h2 class="section-title">Privacy Policy</h2>
+
+      <p class="policy-body"><strong>Effective date: January 1, 2025</strong></p>
+
+      <p class="policy-body">The Atlas Hotel & Lofts ("we," "us," or "our") respects your privacy. This policy describes what information we collect, how we use it, and your rights regarding that information.</p>
+
+      <p class="policy-body"><strong>Information we collect</strong><br />
+      We collect information you provide directly — such as your name, email address, phone number, and payment information — when you make a reservation, contact us, or sign up for our mailing list. We also collect basic usage data when you visit our website (pages visited, browser type, device) through standard web analytics.</p>
+
+      <p class="policy-body"><strong>How we use your information</strong><br />
+      We use your information to process reservations, communicate about your stay, send updates and offers you've opted into, and improve our services. We do not sell your personal information to third parties.</p>
+
+      <p class="policy-body"><strong>Third-party services</strong><br />
+      Reservations processed through Yanolja or other booking platforms are subject to those platforms' privacy policies in addition to ours. We use standard analytics tools (such as Google Analytics) to understand site usage.</p>
+
+      <p class="policy-body"><strong>Email communications</strong><br />
+      If you join our mailing list, you may unsubscribe at any time using the link in any email we send. We will never share your email address with third parties for marketing purposes.</p>
+
+      <p class="policy-body"><strong>Data security</strong><br />
+      We take reasonable measures to protect your personal information. Payment processing is handled by PCI-compliant third-party providers — we do not store full card numbers on our servers.</p>
+
+      <p class="policy-body"><strong>Contact</strong><br />
+      For any privacy-related questions or to request deletion of your data, contact us at <a href="mailto:hello@theatlas.com" style="color:var(--bronze);border-bottom:1px solid rgba(158,123,82,0.3);">hello@theatlas.com</a>.</p>
+
+      <div class="notice">
+        <p>This privacy policy applies to theatlasgoodletsville.com. <strong>TODO: consult a legal professional to review this policy before launch</strong> if you collect payment data or email addresses through the site.</p>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="policy-section" id="faq">
+      <p class="section-label">Common Questions</p>
+      <h2 class="section-title">Frequently Asked Questions</h2>
+
+      <div class="faq-list" id="faq-list">
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span class="faq-question-text">What time is check-in and check-out?</span>
+            <span class="faq-icon"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+          </button>
+          <div class="faq-answer" role="region">
+            <div class="faq-answer-inner">Check-in is from 3:00 PM. Check-out is by 11:00 AM. Early check-in and late check-out are available upon request and subject to availability — please contact us in advance and we'll do our best to accommodate you.</div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span class="faq-question-text">Is parking available? Is it free?</span>
+            <span class="faq-icon"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+          </button>
+          <div class="faq-answer" role="region">
+            <div class="faq-answer-inner">Yes — complimentary on-site parking is available for all hotel guests for the duration of your stay. The lot is accessible 24/7. No reservation is required.</div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span class="faq-question-text">How far is The Atlas from downtown Nashville?</span>
+            <span class="faq-icon"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+          </button>
+          <div class="faq-answer" role="region">
+            <div class="faq-answer-inner">The Atlas is located at 622 Rivergate Pkwy in Goodletsville — approximately 12 miles north of downtown Nashville, about a 20-minute drive via I-65. The Grand Ole Opry and Gaylord Opryland Resort are also approximately 20 minutes away. Nashville International Airport is roughly 30 minutes from the property.</div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span class="faq-question-text">What is the difference between The Atlas Hotel and The Atlas Lofts?</span>
+            <span class="faq-icon"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+          </button>
+          <div class="faq-answer" role="region">
+            <div class="faq-answer-inner">The Atlas Hotel offers boutique nightly accommodations — design-forward rooms ideal for short stays, weekend trips, and business travel. The Atlas Lofts are a separate extended-stay experience offering larger, fully-appointed residences designed for longer visits — whether you're relocating, on a work assignment, or simply need more space. The Lofts have their own booking process and website.</div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span class="faq-question-text">Do you allow pets?</span>
+            <span class="faq-icon"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+          </button>
+          <div class="faq-answer" role="region">
+            <div class="faq-answer-inner">Pet-friendly rooms are available in select room types. Please contact us before booking to confirm availability and discuss specific requirements. A nightly pet fee applies. Service animals are always welcome at no charge.</div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span class="faq-question-text">What is your cancellation policy?</span>
+            <span class="faq-icon"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+          </button>
+          <div class="faq-answer" role="region">
+            <div class="faq-answer-inner">Cancellations made more than 48 hours before arrival receive a full refund. Cancellations 24–48 hours before arrival receive a 50% refund. Cancellations within 24 hours of arrival are non-refundable. Some promotional rates may be non-refundable at time of booking — these will be clearly marked. See our full <a href="#cancellation">Cancellation Policy</a> above for complete details.</div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span class="faq-question-text">Is breakfast included?</span>
+            <span class="faq-icon"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+          </button>
+          <div class="faq-answer" role="region">
+            <div class="faq-answer-inner">[TODO: confirm whether breakfast is included or available.] The Atlas Café is currently in development and will offer a curated morning experience for guests and the local community. In the meantime, several dining options are within a short drive including RiverGate Mall restaurants and the broader Goodletsville dining scene.</div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span class="faq-question-text">Do you have a pool?</span>
+            <span class="faq-icon"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+          </button>
+          <div class="faq-answer" role="region">
+            <div class="faq-answer-inner">A pool experience is planned as part of The Atlas's ongoing development. We'll announce availability to our mailing list first — sign up on our homepage to be notified.</div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span class="faq-question-text">Can I host an event or private gathering at The Atlas?</span>
+            <span class="faq-icon"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+          </button>
+          <div class="faq-answer" role="region">
+            <div class="faq-answer-inner">Private event and gathering spaces are in development. If you have an upcoming event and would like to discuss options, please reach out to us at <a href="mailto:hello@theatlas.com">hello@theatlas.com</a> — we'd love to explore what's possible.</div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span class="faq-question-text">How do I modify or cancel my reservation?</span>
+            <span class="faq-icon"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+          </button>
+          <div class="faq-answer" role="region">
+            <div class="faq-answer-inner">You can modify or cancel through the platform you originally booked on (Yanolja, or directly with us). Alternatively, email <a href="mailto:hello@theatlas.com">hello@theatlas.com</a> with your reservation number and we'll assist you directly.</div>
+          </div>
+        </div>
+
+      </div><!-- /faq-list -->
+    </section>
+
+  </main>
+</div>
+
+<!-- ─── FOOTER ─── -->
+<footer class="page-footer">
+  <span class="page-footer-brand">The Atlas</span>
+  <span class="page-footer-copy">622 Rivergate Pkwy · Goodletsville, TN 37072 · &copy; <span id="footer-year">2025</span> The Atlas. All rights reserved.</span>
+  <div class="page-footer-links">
+    <a href="index.html">Home</a>
+    <a href="policies.html">Policies &amp; FAQ</a>
+    <!-- ✏️ EDIT: Replace hello@theatlas.com with your real email everywhere in this file — search for "hello@theatlas.com" -->
+  <a href="mailto:hello@theatlas.com">Contact</a>
+  </div>
+</footer>
+
+<!-- ─── SCRIPTS ─── -->
+<script>
+  /* Auto-update copyright year */
+  document.getElementById('footer-year').textContent = new Date().getFullYear();
+
+  /* FAQ accordion */
+  document.querySelectorAll('.faq-question').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const item = btn.closest('.faq-item');
+      const isOpen = item.classList.contains('open');
+
+      // Close all
+      document.querySelectorAll('.faq-item.open').forEach(el => {
+        el.classList.remove('open');
+        el.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+      });
+
+      // Open clicked (if it was closed)
+      if (!isOpen) {
+        item.classList.add('open');
+        btn.setAttribute('aria-expanded', 'true');
+      }
+    });
+  });
+
+  /* Sidebar active link on scroll */
+  const sections = document.querySelectorAll('.policy-section[id]');
+  const sidebarLinks = document.querySelectorAll('.sidebar-links a');
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        sidebarLinks.forEach(a => a.classList.remove('active'));
+        const active = document.querySelector(`.sidebar-links a[href="#${entry.target.id}"]`);
+        if (active) active.classList.add('active');
+      }
+    });
+  }, { rootMargin: '-20% 0px -70% 0px' });
+  sections.forEach(s => observer.observe(s));
+</script>
+
+</body>
+</html>
